@@ -1,0 +1,10 @@
+version: "3"
+services:
+  cppenv:
+    build: ./docker
+    image: cppdev
+    container_name: cppdev
+    volumes:
+      - ./:/workspace
+    tty: true
+    working_dir: /workspace
